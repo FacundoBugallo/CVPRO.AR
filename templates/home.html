@@ -8,15 +8,14 @@
 {% block content %}
   <header class="header">
     <div class="container">
-      <div class="title-style" >
+      <div class="title-style">
         <h1>CVPro.ar</h1>
-        
       </div>
-        <nav>
-            <a href="#ejemplos" class="btn">Ejemplos</a>
-            <a href="#contacto" class="btn">Contacto</a>  
-        </nav>
-      </div>
+      <nav>
+          <a href="#ejemplos" class="btn">Ejemplos</a>
+          <a href="#contacto" class="btn">Contacto</a>  
+      </nav>
+    </div>
   </header>
 
 <section class="hero">
@@ -25,7 +24,6 @@
         <p>Ofrecemos un servicio personalizado de creación de CVs que resalta tus habilidades y experiencias. ¡Contáctame y da el primer paso hacia tu próximo empleo!</p>
     </div>
 </section>
-
 
 <section class="Section">
   <h2 class="title-style-ej" id="ejemplos">Ejemplos</h2>
@@ -38,10 +36,8 @@
   </div>
 </section>
 
-
-
 <footer class="contact" id="contacto">
-  <a href="https://wa.me/541135678515" class="whatsapp-btn">Escríbeme</a>
+  <a href="https://wa.me/541135678515" class="whatsapp-btn">Contáctame para comenzar tu CV</a>
   <p>Numero alternativo y gmail: +54 11 356 78515 | facuthis@gmail.com</p>
   <p><a href="{{ url_for('copyright') }}">Copyright</a> | <a href="{{ url_for('legales') }}">Legales</a></p>
 </footer>
@@ -49,4 +45,3 @@
 <script src="{{ url_for('static', filename='js/lightbox.js') }}"></script>
 
 {% endblock %}
-
