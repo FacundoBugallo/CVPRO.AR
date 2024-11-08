@@ -23,8 +23,23 @@
     </div>
 </section>
 
+<section class="description-section">
+  <div class="container">
+    <div class="text-wrapper">
+      <h2 class="section-title">Transforma Tu Futuro con un CV Profesional</h2>
+      <p class="section-text">
+        Creemos en la personalización y la excelencia, por eso trabajamos contigo hasta que estés completamente satisfecho con tu CV. Ofrecemos correcciones ilimitadas y un acompañamiento cercano para asegurarnos de que el resultado final te haga sentir seguro y preparado para aplicar a las oportunidades que deseas.
+      </p>
+      <p class="section-text">
+        Dale el primer paso hacia tu próximo empleo con un CV que marca la diferencia. ¡Estamos aquí para ayudarte a alcanzar tus metas profesionales!
+      </p>
+    </div>
+  </div>
+</section>
+
+
 <section class="Section">
-  <h2 class="title-style" id="ejemplos">Ejemplos</h2>
+  <h2 class="title-style" id="ejemplos">Ejemplos <p>en canvas</p></h2>
   <div class="grid-container">
     {% for item in items %}
     <div class="cv-item">
@@ -35,10 +50,12 @@
 </section>
 
 <footer class="contact" id="contacto">
-  <a href="https://wa.me/541135678515" class="whatsapp-btn">Contáctame para comenzar tu CV</a>
-  <p>Numero alternativo y gmail: +54 11 356 78515 | facuthis@gmail.com</p>
-  <p><a href="{{ url_for('copyright') }}">Copyright</a> | <a href="{{ url_for('legales') }}">Legales</a></p>
-</footer>
+  <div>
+    <a href="https://wa.me/541135678515" class="whatsapp-btn">Contáctame para comenzar tu CV</a>
+    <p>Numero alternativo y gmail: +54 11 356 78515 | facuthis@gmail.com</p>
+    <p><a href="{{ url_for('copyright') }}">Copyright</a> | <a href="{{ url_for('legales') }}">Legales</a> | <a href="{{ url_for('vision') }}">Vision</p>
+  </div>
+  </footer>
 
 <script src="{{ url_for('static', filename='js/lightbox.js') }}"></script>
 
