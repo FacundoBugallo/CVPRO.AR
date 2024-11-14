@@ -1,4 +1,4 @@
-from flask import Flask, request, make_response, redirect, render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -10,6 +10,7 @@ items = [
     "static/img/CVResume2.png",
     "static/img/CVResume1.png"
 ]
+
 @app.errorhandler(404)
 def not_found_endpoint(error):
     return render_template("not_found404.html", error=error)
@@ -29,11 +30,10 @@ def copyright():
 def legales():
     return render_template('legales.html')
 
-
 @app.route('/vision')
 def vision():
     return render_template('Objetivos.html')
 
-
-if __name__ == '__main__':  
-    app.run(host='0.0.0.0', port=81)
+if __name__ == '__main__':
+    from waitress import serve
+    serve(app, host='0.0.0.0', port=81)
