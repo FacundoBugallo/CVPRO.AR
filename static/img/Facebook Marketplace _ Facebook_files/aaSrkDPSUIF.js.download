@@ -1,3 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("useCometLogInMessengerMutation",["CometRelay","react","useCometLogInMessengerMutation.graphql"],(function(a,b,c,d,e,f,g){"use strict";var h,i,j=(i||d("react")).c;function a(a,c){var e=j(8),f;e[0]===Symbol["for"]("react.memo_cache_sentinel")?(f=h!==void 0?h:h=b("useCometLogInMessengerMutation.graphql"),e[0]=f):f=e[0];f=d("CometRelay").useMutation(f);var g=f[0];f=f[1];var i;e[1]!==g||e[2]!==a||e[3]!==c?(i=function(b){g({onCompleted:a,onError:c,variables:{input:b}})},e[1]=g,e[2]=a,e[3]=c,e[4]=i):i=e[4];i=i;var k;e[5]!==i||e[6]!==f?(k=[i,f],e[5]=i,e[6]=f,e[7]=k):k=e[7];return k}g["default"]=a}),98);

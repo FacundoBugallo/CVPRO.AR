@@ -1,4 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("CometAdsRenderingValidationContext",["FBLogger","react"],(function(a,b,c,d,e,f,g){"use strict";var h;a=h||d("react");b=a.createContext({dispatcher:function(a){c("FBLogger")("comet_ads").mustfix("CometAdsRenderingValidationLoggingContext is not initialized with a valid dispatcher")},sponsoredData:null,state:null});g["default"]=b}),98);
-__d("GHLShouldChangeSponsoredDataFieldName.relayprovider",["MetaConfig"],(function(a,b,c,d,e,f,g){"use strict";function a(){return c("MetaConfig")._("34")&&c("MetaConfig")._("70")}g.get=a}),98);
